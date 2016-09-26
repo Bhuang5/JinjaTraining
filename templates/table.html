@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <h1>Occupation Table</h1>
+  </br>
+  <body>
+    <table>
+      {% for item in collection %}
+      <tr>
+	<td> {{ item }} </td>
+	<td> {{ collection[item] }} </td>
+      </tr>
+     {% endfor %}
+    </table>
+    </br>
+    </br>
+    </br>
+    <h3>Your Random Job!</h3>
+    {{ job }} 
+  </body>
+
+</html>
